@@ -3,12 +3,14 @@ public class Room {
     private double currentTemperature;
     private double surface;
     private boolean hasProAirConditioner;
+    private AirConditioner airConditioner;
 
 
-    public Room(double currentTemperature, double surface, boolean hasProAirConditioner) {
+    public Room(double currentTemperature, double surface, boolean hasProAirConditioner, AirConditioner airConditioner) {
         this.currentTemperature = currentTemperature;
         this.surface = surface;
         this.hasProAirConditioner = hasProAirConditioner;
+        this.airConditioner = airConditioner;
     }
 
     public double getCurrentTemperature() {
@@ -19,16 +21,13 @@ public class Room {
         return surface;
     }
 
-    public boolean isHasProAirConditioner() {
-        return hasProAirConditioner;
+    public String showInfo() {
+        return "currentTemperature: " + currentTemperature + ", surface: " + surface + ", hasProAirConditioner:" + hasProAirConditioner;
     }
-
-    public void print() {
-
-        System.out.println("currentTemperature:" + currentTemperature);
-        System.out.println("surface:" + surface);
-        System.out.println("hasProAirConditioner:" + hasProAirConditioner);
-    }
-
 
 }
+
+
+
+
+

@@ -1,17 +1,12 @@
 public class ProAirConditioner extends AirConditioner {
 
 
-    public Room turnOnAirConditionerFor(Room room) {
-        double newCurrentTemperature = lowerTemp();
-        return new Room(newCurrentTemperature, room.getSurface(), room.isHasProAirConditioner());
+    public void turnOnAirConditionerFor(Room room) {
+        lowerTemp(room);
+        System.out.println("Klimatyzacja ProAir włączona");
     }
 
 
-    @Override
-    public double lowerTemp() {
-        return super.lowerTemp();
-
-    }
 
 
 }
