@@ -12,15 +12,15 @@ public class RoomApp {
 
         Room rooms[] = {room1, room2};
 
-        basicAir.turnOnAirConditionerFor(room1);
-        proAir.turnOnAirConditionerFor(room2);
+
 
 
         for (int i = 0; i < rooms.length; i++) {
             System.out.println(rooms[i].showInfo());
         }
 
-
+        basicAir.turnOnAirConditionerFor(room1);
+        proAir.turnOnAirConditionerFor(room2);
 
 
     }
